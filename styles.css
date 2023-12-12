@@ -1,3 +1,96 @@
-/* styles.css */
 
-/* Add styles here to customize the appearance of your app */
+#container {
+  width: 500px;
+  height: 300px;
+  border: 1px solid #ccc;
+}
+
+
+element.style {
+  width: 800px;
+  height: 600px;
+}
+
+.monaco-editor, .monaco-diff-editor, .monaco-component {
+  --vscode-foreground: #616161;
+  --vscode-disabledForeground: rgba(97, 97, 97, 0.5);
+  --vscode-errorForeground: #a1260d;
+  --vscode-descriptionForeground: #717171;
+  --vscode-icon-foreground: #424242;
+  --vscode-focusBorder: #0090f1;
+  --vscode-textSeparator-foreground: rgba(0, 0, 0, 0.18);
+  --vscode-textLink-foreground: #006ab1;
+  --vscode-textLink-activeForeground: #006ab1;
+  --vscode-textPreformat-foreground: #a31515;
+  --vscode-textPreformat-background: rgba(0, 0, 0, 0.1);
+  --vscode-textBlockQuote-background: #f2f2f2;
+  --vscode-textBlockQuote-border: rgba(0, 122, 204, 0.5);
+  --vscode-textCodeBlock-background: rgba(220, 220, 220, 0.4);
+  --vscode-widget-shadow: rgba(0, 0, 0, 0.16);
+  --vscode-input-background: #ffffff;
+  --vscode-input-foreground: #616161;
+  --vscode-inputOption-activeBorder: #007acc;
+  --vscode-inputOption-hoverBackground: rgba(184, 184, 184, 0.31);
+  --vscode-inputOption-activeBackground: rgba(0, 144, 241, 0.2);
+  --vscode-inputOption-activeForeground: #000000;
+  --vscode-input-placeholderForeground: rgba(97, 97, 97, 0.5);
+  --vscode-inputValidation-infoBackground: #d6ecf2;
+  --vscode-inputValidation-infoBorder: #007acc;
+  --vscode-inputValidation-warningBackground: #f6f5d2;
+  --vscode-inputValidation-warningBorder: #b89500;
+  --vscode-inputValidation-errorBackground: #f2dede;
+  --vscode-inputValidation-errorBorder: #be1100;
+  --vscode-dropdown-background: #ffffff;
+  --vscode-dropdown-foreground: #616161;
+  --vscode-dropdown-border: #cecece;
+  --vscode-button-foreground: #ffffff;
+  --vscode-button-separator: rgba(255, 255, 255, 0.4);
+  --vscode-button-background: #007acc;
+  --vscode-button-hoverBackground: #0062a3;
+  --vscode-button-secondaryForeground: #ffffff;
+  --vscode-button-secondaryBackground: #5f6a79;
+  --vscode-button-secondaryHoverBackground: #4c5561;
+  --vscode-badge-background: #c4c4c4;
+  --vscode-badge-foreground: #333333;
+  --vscode-scrollbar-shadow: #dddddd;
+  --vscode-scrollbarSlider-background: rgba(100, 100, 100, 0.4);
+  --vscode-scrollbarSlider-hoverBackground: rgba(100, 100, 100, 0.7);
+  --vscode-scrollbarSlider-activeBackground: rgba(0, 0, 0, 0.6);
+  --vscode-progressBar-background: #0e70c0;
+  --vscode-editorError-foreground: #e51400;
+  --vscode-editorWarning-foreground: #bf8803;
+  --vscode-editorInfo-foreground: #1a85ff;
+  --vscode-editorHint-foreground: #6c6c6c;
+  --vscode-sash-hoverBorder: #0090f1;
+}
+
+.monaco-editor {
+  font-family: -apple-system,BlinkMacSystemFont,Segoe WPC,Segoe UI,HelveticaNeue-Light,system-ui,Ubuntu,Droid Sans,sans-serif;
+  --monaco-monospace-font: "SF Mono",Monaco,Menlo,Consolas,"Ubuntu Mono","Liberation Mono","DejaVu Sans Mono","Courier New",monospace;
+}
+.monaco-editor, .monaco-editor-background {
+  background-color: var(--vscode-editor-background);
+}
+.monaco-editor {
+  position: relative;
+  overflow: visible;
+  -webkit-text-size-adjust: 100%;
+  color: var(--vscode-editor-foreground);
+}
+user agent stylesheet
+div {
+  display: block;
+}
+style attribute {
+  width: 800px;
+  height: 600px;
+  border: 1px solid grey;
+  --vscode-editorCodeLens-lineHeight: 16px;
+  --vscode-editorCodeLens-fontSize: 12px;
+  --vscode-editorCodeLens-fontFeatureSettings: "liga" off, "calt" off;
+}
+:root {
+  --vscode-sash-size: 4px;
+  --vscode-sash-hover-size: 4px;
+}
+

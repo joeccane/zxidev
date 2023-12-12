@@ -1,19 +1,42 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
-    <link href="./styles.css" rel="stylesheet">
-    <title>Hello World!</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="Content-Security-Policy" content="
+          script-src 'self' https: file: 'sha256-90fWuYfboxDyQYnE3Fh1l+WOxFSvKkXNkPY7eCeWzAM=' 'unsafe-inline';
+          style-src 'self' https: 'unsafe-inline';
+          script-src-elem 'self' 'unsafe-inline' https:;
+          img-src 'self' https:;
+          connect-src 'self' https:;">
+        <link href="./styles.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://pyscript.net/releases/2023.11.2/core.css" />
+        <script type="module" src="https://pyscript.net/releases/2023.11.2/core.js"></script>
+        <title>Hello World!</title>
+    </head>
+    <body>
+      
+      
+    </body>
+    <head>
+      <title>browser-amd-editor</title>
+      <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    </head>
+    <body>
+      <h2>Monaco Editor Sample</h2>
+      <div id="container" style="width: 800px; height: 600px; border: 1px solid grey"></div>
+  
+      <!-- OR ANY OTHER AMD LOADER HERE INSTEAD OF loader.js -->
+      <script src="./node_modules/monaco-editor/min/vs/loader.js"></script>
+      <script>
+        require.config({ paths: { vs: './node_modules/monaco-editor/min/vs' } });
+  
+        require(['vs/editor/editor.main'], function () {
+          var editor = monaco.editor.create(document.getElementById('container'), {
+            value: ['def x()', '\tprint("Hello world!")'].join('\n'),
+            language: 'python'
+          });
 
-    <!-- You can also require other files to run in this process -->
-    <script src="./renderer.js"></script>
-  </body>
+          
+        });
+      </script>
 </html>

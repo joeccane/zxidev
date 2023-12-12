@@ -5,3 +5,15 @@
  * `contextIsolation` is turned on. Use the contextBridge API in `preload.js`
  * to expose Node.js functionality from the main process.
  */
+
+require.config({ paths: { vs: './node_modules/monaco-editor/min/vs' } });
+  
+        require(['vs/editor/editor.main'], function () {
+          var editor = monaco.editor.create(document.getElementById('container'), {
+            value: ['def x()', '\tprint("Hello world!")'].join('\n'),
+            language: 'python'
+          });
+          
+
+          
+        });
